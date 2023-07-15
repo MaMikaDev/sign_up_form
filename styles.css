@@ -4,3 +4,64 @@
 *::after {
   box-sizing: border-box;
 }
+
+:root {
+  font-family: "Martian Mono", monospace;
+  font-size: 16px;
+}
+
+body {
+  display: grid;
+  background-image: url(images/meiying-ng-OrwkD-iWgqg-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+  height: clamp(80vh 90vh 95vh);
+  overflow: hidden;
+}
+
+div.left_side {
+  padding: 30px;
+}
+
+div.form_box {
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.input_box {
+  background-color: rgb(254, 254, 159);
+  padding: 4px;
+  border-radius: 8px;
+  border: 2px solid #ffffff;
+  font-size: large;
+}
+
+.submit_button {
+  box-shadow: inset 0px 1px 0px 0px #f7c5c0;
+  background: linear-gradient(to bottom, #f5a0d2 5%, #dd5cb6 100%);
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #b23e35;
+}
+/* submit_button:hover {
+  background: linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+  background-color: #ffffff;
+} */
+.submit_button:active {
+  position: relative;
+  top: 1px;
+}
