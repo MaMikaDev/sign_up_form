@@ -46,6 +46,11 @@ div.logo_side {
   align-items: center;
 }
 
+div.logo_side img {
+  width: 60%;
+  opacity: 67%;
+}
+
 div.form_box {
   margin: 10px 0;
   overflow: hidden;
