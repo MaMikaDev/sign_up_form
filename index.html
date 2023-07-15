@@ -10,39 +10,50 @@
   </head>
   <body>
     <main>
-      <div class="left_side">
+      <div class="logo_side">
         <img src="" alt="Blah alternative for logo" />
       </div>
 
       <div class="form_box">
         <h1>Non-Existent Service</h1>
         <p>
-          This is a mock-up sign-up form. Who knows what is it for, but hey this
-          may be something you need in your life! <em>Sign Up - Now!</em>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.
+          <em>Sign Up - Now!</em> to get started.
         </p>
+        <p>You <em>know</em> you want to.</p>
+
         <legend>Contact Details:</legend>
 
         <fieldset>
-          <form action="#" method="post">
-            <p>
+          <form action="#">
+            <div class="form_row">
               <label for="name">Name:</label>
               <input
                 type="text"
                 placeholder="Your First Name"
                 id="name"
                 class="input_box"
+                minlength="3"
+                maxlength="20"
                 required
               />
+            </div>
 
+            <div class="form_row">
               <label for="surname">Surname:</label>
               <input
                 type="text"
                 placeholder="Your Surname"
                 id="surname"
                 class="input_box"
+                minlength="3"
+                maxlength="20"
                 required
               />
+            </div>
 
+            <div class="form_row">
               <label for="email">Email:</label>
               <input
                 type="email"
@@ -51,25 +62,9 @@
                 class="input_box"
                 required
               />
+            </div>
 
-              <label for="password">Password:</label>
-              <input
-                type="password"
-                placeholder="Enter Password"
-                id="password"
-                class="input_box"
-                required
-              />
-
-              <label for="password">Re-Type Password:</label>
-              <input
-                type="password"
-                placeholder="Re-Type Password"
-                id="re-password"
-                class="input_box"
-                required
-              />
-
+            <div class="form_row">
               <label for="tel">Telephone:</label>
               <input
                 type="tel"
@@ -78,9 +73,32 @@
                 class="input_box"
                 required
               />
+            </div>
+            <div class="form_row">
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                id="password"
+                class="input_box"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                required
+              />
+            </div>
 
-              <button type="submit" class="submit_button">Sign Up</button>
-            </p>
+            <div class="form_row">
+              <label for="password">Re-Type Password:</label>
+              <input
+                type="password"
+                placeholder="Re-Type Password"
+                id="re-password"
+                class="input_box"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                required
+              />
+            </div>
+
+            <button type="submit" class="submit_button">Sign Up</button>
           </form>
         </fieldset>
       </div>
