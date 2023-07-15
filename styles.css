@@ -27,7 +27,7 @@ a:visited {
 
 main {
   flex: 1;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 div.form_box h1 {
